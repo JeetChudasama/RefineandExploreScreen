@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/Black" android:width="1dp" />
+            <corners
+                android:bottomRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp" />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/arrow_drop_down"
+        android:gravity="center|end"
+        android:width="@dimen/_24sdp"
+        android:height="@dimen/_24sdp"
+        android:end="@dimen/_10sdp"/>
+</layer-list>

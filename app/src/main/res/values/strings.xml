@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Refine and Explore Screen</string>
+
+    <string-array name="selecting_availability">
+        <item>Available | Hey Let Us Connect</item>
+        <item>Away | stay Discrete And Watch</item>
+        <item>Busy | Do Not Disturb | Will Catch Up Later</item>
+        <item>SOS | Emergency! Need Assistance! HELP</item>
+    </string-array>
+
+    <string name="status">Hi community! I am open to new connections</string>
+    <string name="sve">Save &amp; Explore</string>
+    <string name="explore_screen">Explore Screen</string>
+</resources>

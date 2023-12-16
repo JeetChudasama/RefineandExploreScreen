@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_16sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        app:cardBackgroundColor="@color/Ivory"
+        app:cardCornerRadius="@dimen/_14sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/invite1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+INVITE"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Suraj Nanvankar"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:paddingLeft="@dimen/_65sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/MidnightBlue"
+                app:layout_constraintEnd_toStartOf="@id/invite1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/locationAndData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mumbai | Student"
+                android:textSize="@dimen/_12ssp"
+                android:paddingLeft="@dimen/_65sdp"
+                app:layout_constraintStart_toStartOf="@id/name"
+                app:layout_constraintTop_toBottomOf="@id/name"/>
+
+            <TextView
+                android:id="@+id/textLocate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Within 200-250"
+                android:textColor="@color/MidnightBlue"
+                android:paddingLeft="@dimen/_65sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/locationAndData"
+                app:layout_constraintTop_toBottomOf="@id/locationAndData"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/textLocate"
+                app:layout_constraintTop_toBottomOf="@id/textLocate"
+                app:trackHeight="@dimen/_10sdp"
+                app:thumbRadius="0dp"
+                android:valueFrom="0"
+                android:valueTo="100"
+                android:layout_marginStart="@dimen/_55sdp"
+                android:value="35"
+                app:trackColorActive="@color/Gray"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+
+            <TextView
+                android:id="@+id/features"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coffee | Business | Friendship"
+                app:layout_constraintTop_toBottomOf="@+id/slider"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingLeft="@dimen/_16sdp"
+                android:textColor="@color/MidnightBlue"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12ssp"/>
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi community! I am open to new connections"
+                app:layout_constraintTop_toBottomOf="@id/features"
+                app:layout_constraintStart_toStartOf="@id/features"
+                android:textColor="@color/MidnightBlue"
+                android:paddingLeft="@dimen/_16sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="i am SQL Developer and i am Bachlors in IT"
+                app:layout_constraintStart_toStartOf="@id/msg"
+                app:layout_constraintTop_toBottomOf="@id/msg"
+                android:textColor="@color/MidnightBlue"
+                android:paddingLeft="@dimen/_16sdp"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/OverLapingCard"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        app:cardBackgroundColor="@color/LightSteelBlue"
+        app:cardCornerRadius="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_8sdp"
+            android:text="SN"
+            android:gravity="center"
+            android:textSize="@dimen/_35sdp"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

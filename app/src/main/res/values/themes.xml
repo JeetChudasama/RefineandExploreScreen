@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RefineAndExploreScreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.RefineAndExploreScreen" parent="Base.Theme.RefineAndExploreScreen" />
+    <style name="tooltip" parent="Widget.MaterialComponents.Tooltip">
+        <item name="shapeAppearanceOverlay">@style/tooltipShOverylay</item>
+        <item name="backgroundTint">@color/DarkBlue</item>
+    </style>
+
+    <style name="tooltipShOverylay">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
